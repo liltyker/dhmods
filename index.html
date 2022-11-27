@@ -24,189 +24,187 @@
 
 <body class="bg-blue text-white">
 
-    <div data-scroll-container>
+    <main class="relative">
 
-        <main class="relative">
+        <section class="top-content s-margin-half">
 
-            <section class="top-content s-margin-half" data-scroll-section>
+            <div class="container">
 
-                <div class="container">
+                <div class="row">
 
-                    <div class="row">
+                    <div class="w-full lg:w-3/5 md:px-6">
 
-                        <div class="w-full lg:w-3/5 md:px-6">
+                        <h1>Recommended Mods Guide</h1>
+                        <p><small><em>Last Update 27th Nov 22.</em></small></p>
 
-                            <h1>Recommended Mods Guide</h1>
-
-                            <div class="content mt-6">
-                                <p>Welcome to the (un)official Disney Heroes Mod Guide!!</p>
-                                <p>Created by Musketeer (/u/Thinker), designed & coded by Pipsqueak (/u/liltyker), we hope that this guide will serve you well when choosing mods for your heroes.</p>
-                                <p>Please take the mod setups in this guide as <em>ADVICE ONLY!</em> You might have different mods in mind that will work great in a specific scenario. This guide should be used as a fallback of options that will generally be the strongest in <em>most</em> situations.</p>
-                            </div>
-
+                        <div class="content mt-6">
+                            <p>Welcome to the (un)official Disney Heroes Mod Guide!!</p>
+                            <p>Created by Musketeer (/u/Thinker), designed & coded by Pipsqueak (/u/liltyker), we hope that this guide will serve you well when choosing mods for your heroes.</p>
+                            <p>Please take the mod setups in this guide as <em>ADVICE ONLY!</em> You might have different mods in mind that will work great in a specific scenario. This guide should be used as a fallback of options that will generally be the strongest in <em>most</em> situations.</p>
+                            <p>For updates, discussion & usage notes visit the Forum Thread - <a href="https://discourse.disneyheroesgame.com/t/recommended-mods-guide/1832072?u=pipsqueak" target="_blank" rel="noopener noreferrer">Recommended Mods Guide</a></p>
                         </div>
 
                     </div>
 
                 </div>
 
-            </section>
+            </div>
 
-            <section class="heroes-grid s-margin-half" data-scroll-section>
+        </section>
 
-                <div class="container">
+        <section class="heroes-grid s-margin-half">
 
-                    <div class="row">
+            <div class="container">
 
-                        <div class="w-full md:px-6">
+                <div class="row">
 
-                            <div class="title">
-                                <p>Use the filters below to view the heroes you're looking for.</p>
+                    <div class="w-full md:px-6">
+
+                        <div class="title">
+                            <p>Use the filters below to view the heroes you're looking for.</p>
+                        </div>
+
+                        <div class="row mt-12">
+                            <!--<div class="w-full md:w-auto md:mr-12 mt-6 md:mt-0">
+                                <input type="text" class="search" placeholder="Search"/>
+                            </div>-->
+                            <div class="w-full md:w-1/3 lg:w-auto md:pr-12 mt-6 md:mt-0">
+                                <select placeholder="All Teams" title="Team Filter" class="bg-blue-light p-4 rounded-lg w-full lg:w-auto" data-type="team">
+                                    <option value="" selected>All Teams</option>
+                                    <option value=".red">Red Team</option>
+                                    <option value=".blue">Blue Team</option>
+                                    <option value=".yellow">Yellow Team</option>
+                                </select>
                             </div>
-
-                            <div class="row mt-12">
-                                <!--<div class="w-full md:w-auto md:mr-12 mt-6 md:mt-0">
-                                    <input type="text" class="search" placeholder="Search"/>
-                                </div>-->
-                                <div class="w-full md:w-1/3 lg:w-auto md:pr-12 mt-6 md:mt-0">
-                                    <select placeholder="All Teams" title="Team Filter" class="bg-blue-light p-4 rounded-lg w-full lg:w-auto" data-type="team">
-                                        <option value="" selected>All Teams</option>
-                                        <option value=".red">Red Team</option>
-                                        <option value=".blue">Blue Team</option>
-                                        <option value=".yellow">Yellow Team</option>
-                                    </select>
-                                </div>
-                                <div class="w-full md:w-1/3 lg:w-auto md:pr-12 mt-6 md:mt-0">
-                                    <select placeholder="All Roles" title="Role Filter" class="bg-blue-light p-4 rounded-lg w-full lg:w-auto" data-type="role">
-                                        <option value="" selected>All Roles</option>
-                                        <option value=".tank">Tank</option>
-                                        <option value=".damage">Damage</option>
-                                        <option value=".support">Support</option>
-                                        <option value=".control">Control</option>
-                                    </select>
-                                </div>
-                                <div class="w-full md:w-1/3 lg:w-auto md:pr-12 mt-6 md:mt-0">
-                                    <select placeholder="All Tiers" title="Tier Filter" class="bg-blue-light p-4 rounded-lg w-full lg:w-auto" data-type="tier">
-                                        <option value="" selected>All Tiers</option>
-                                        <option value=".s-tier">S Tier</option>
-                                        <option value=".a-tier">A Tier</option>
-                                        <option value=".b-tier">B Tier</option>
-                                        <option value=".c-tier">C Tier</option>
-                                        <option value=".d-tier">D Tier</option>
-                                    </select>
-                                </div>
-                                <div class="w-1/3 lg:w-auto md:pr-12 mt-6 md:mt-12 lg:mt-0 pr-3">
-                                    <select placeholder="SP Mods" title="SP Filter" class="bg-blue-light p-4 rounded-lg w-full lg:w-auto" data-type="sp">
-                                        <option value="" selected>SP Mods</option>
-                                        <option value=".green-skill">Green Skill</option>
-                                        <option value=".blue-skill">Blue Skill</option>
-                                        <option value=".purple-skill">Purple Skill</option>
-                                    </select>
-                                </div>
-                                <div class="w-1/3 lg:w-auto md:pr-12 mt-6 md:mt-12 lg:mt-0 px-3 md:px-0">
-                                    <select placeholder="BD Mods" title="BD Filter" class="bg-blue-light p-4 rounded-lg w-full lg:w-auto" data-type="bd">
-                                        <option value="" selected>BD Mods</option>
-                                        <option value=".normal-crit">Normal Crit</option>
-                                        <option value=".fantastic-crit">Fantastic Crit</option>
-                                        <option value=".attack-speed">Attack Speed</option>
-                                    </select>
-                                </div>
-                                <div class="w-1/3 lg:w-auto md:pr-12 mt-6 md:mt-12 lg:mt-0 pl-3 md:pl-0">
-                                    <select placeholder="HP Mods" title="HP Filter" class="bg-blue-light p-4 rounded-lg w-full lg:w-auto" data-type="hp">
-                                        <option value="" selected>HP Mods</option>
-                                        <option value=".armor">Armor</option>
-                                        <option value=".reality">Reality</option>
-                                        <option value=".starting-shield">Starting Shield</option>
-                                    </select>
-                                </div>
-                                <div class="w-full md:w-auto md:mr-12 mt-6 lg:mt-0 flex items-center">
-                                    <div class="hero-count pl-6 md:pl-0"><span class="font-bold">193</span> Heroes</div>
-                                </div>
-                                
+                            <div class="w-full md:w-1/3 lg:w-auto md:pr-12 mt-6 md:mt-0">
+                                <select placeholder="All Roles" title="Role Filter" class="bg-blue-light p-4 rounded-lg w-full lg:w-auto" data-type="role">
+                                    <option value="" selected>All Roles</option>
+                                    <option value=".tank">Tank</option>
+                                    <option value=".damage">Damage</option>
+                                    <option value=".support">Support</option>
+                                    <option value=".control">Control</option>
+                                </select>
                             </div>
-
+                            <div class="w-full md:w-1/3 lg:w-auto md:pr-12 mt-6 md:mt-0">
+                                <select placeholder="All Tiers" title="Tier Filter" class="bg-blue-light p-4 rounded-lg w-full lg:w-auto" data-type="tier">
+                                    <option value="" selected>All Tiers</option>
+                                    <option value=".s-tier">S Tier</option>
+                                    <option value=".a-tier">A Tier</option>
+                                    <option value=".b-tier">B Tier</option>
+                                    <option value=".c-tier">C Tier</option>
+                                    <option value=".d-tier">D Tier</option>
+                                </select>
+                            </div>
+                            <div class="w-1/3 lg:w-auto md:pr-12 mt-6 md:mt-12 lg:mt-0 pr-3">
+                                <select placeholder="SP Mods" title="SP Filter" class="bg-blue-light p-4 rounded-lg w-full lg:w-auto" data-type="sp">
+                                    <option value="" selected>SP Mods</option>
+                                    <option value=".green-skill">Green Skill</option>
+                                    <option value=".blue-skill">Blue Skill</option>
+                                    <option value=".purple-skill">Purple Skill</option>
+                                </select>
+                            </div>
+                            <div class="w-1/3 lg:w-auto md:pr-12 mt-6 md:mt-12 lg:mt-0 px-3 md:px-0">
+                                <select placeholder="BD Mods" title="BD Filter" class="bg-blue-light p-4 rounded-lg w-full lg:w-auto" data-type="bd">
+                                    <option value="" selected>BD Mods</option>
+                                    <option value=".normal-crit">Normal Crit</option>
+                                    <option value=".fantastic-crit">Fantastic Crit</option>
+                                    <option value=".attack-speed">Attack Speed</option>
+                                </select>
+                            </div>
+                            <div class="w-1/3 lg:w-auto md:pr-12 mt-6 md:mt-12 lg:mt-0 pl-3 md:pl-0">
+                                <select placeholder="HP Mods" title="HP Filter" class="bg-blue-light p-4 rounded-lg w-full lg:w-auto" data-type="hp">
+                                    <option value="" selected>HP Mods</option>
+                                    <option value=".armor">Armor</option>
+                                    <option value=".reality">Reality</option>
+                                    <option value=".starting-shield">Starting Shield</option>
+                                </select>
+                            </div>
+                            <div class="w-full md:w-auto md:mr-12 mt-6 lg:mt-0 flex items-center">
+                                <div class="hero-count pl-6 md:pl-0"><span class="font-bold">193</span> Heroes</div>
+                            </div>
+                            
                         </div>
 
                     </div>
 
-                    <div class="row s-padding-half">
+                </div>
 
-                        <div class="w-full heroes row">
+                <div class="row s-padding-half">
 
-                            <div class="hero w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 py-6 md:p-6 hidden" style="display: none;">
+                    <div class="w-full heroes row">
 
-                                <div class="inner h-full bg-blue-light p-6 rounded-lg">
-                    
-                                    <div class="name font-bold row">
-                                        <h3 class="flex-1 relative">
-                                        
-                                            <div class="toggles absolute bottom-0 right-0 p-3 row">
-                                                <span class="active"></span>
-                                                <span></span>
-                                            </div>
-                                        
-                                        </h3>
-                                    </div>
-                    
-                                    <hr>
-                    
-                                    <div class="details capitalize row text-center">
-                                        <div class="w-1/2 p-2 bg-red-team bg-blue-team bg-yellow-team"></div>
-                                        <div class="w-1/2 p-2 row items-center justify-center"></div>
-                                    </div>
-                    
-                                    <hr>
-                    
-                                    <div class="mods relative mt-6 row capitalize text-center text-red-team text-blue-team text-yellow-team">
-                                        <div class="w-1/2 p-4"></div>
-                                        <div class="w-1/2 p-4"></div>
-                                        <div class="w-1/2 p-4"></div>
-                                        <div class="w-1/2 p-4"></div>
-                                        <div class="mods set-2 row capitalize text-center absolute top-0 left-0 w-full h-full bg-blue-light z-10">
-                                            <div class="w-1/2 p-4"></div>
-                                            <div class="w-1/2 p-4"></div>
-                                            <div class="w-1/2 p-4"></div>
-                                            <div class="w-1/2 p-4"></div>
+                        <div class="hero w-full md:w-1/2 lg:w-1/3 2xl:w-1/4 py-6 md:p-6 hidden" style="display: none;">
+
+                            <div class="inner h-full bg-blue-light p-6 rounded-lg">
+                
+                                <div class="name font-bold row">
+                                    <h3 class="flex-1 relative">
+                                    
+                                        <div class="toggles absolute bottom-0 right-0 p-3 row">
+                                            <span class="active"></span>
+                                            <span></span>
                                         </div>
-                                    </div>
-                    
+                                    
+                                    </h3>
                                 </div>
+                
+                                <hr>
+                
+                                <div class="details capitalize row text-center">
+                                    <div class="w-1/2 p-2 bg-red-team bg-blue-team bg-yellow-team"></div>
+                                    <div class="w-1/2 p-2 row items-center justify-center"></div>
+                                </div>
+                
+                                <hr>
+                
+                                <div class="mods relative mt-6 row capitalize text-center text-red-team text-blue-team text-yellow-team">
+                                    <div class="w-1/2 p-4"></div>
+                                    <div class="w-1/2 p-4"></div>
+                                    <div class="w-1/2 p-4"></div>
+                                    <div class="w-1/2 p-4"></div>
+                                    <div class="mods set-2 row capitalize text-center absolute top-0 left-0 w-full h-full bg-blue-light z-10">
+                                        <div class="w-1/2 p-4"></div>
+                                        <div class="w-1/2 p-4"></div>
+                                        <div class="w-1/2 p-4"></div>
+                                        <div class="w-1/2 p-4"></div>
+                                    </div>
+                                </div>
+                
+                            </div>
+                
+                        </div>
+
+                    </div>
+
                     
-                            </div>
-
-                        </div>
-
-                        
-
-                    </div>
 
                 </div>
 
-            </section>
+            </div>
 
-            <section class="bottom-content s-margin-half" data-scroll-section>
+        </section>
 
-                <div class="container">
+        <section class="bottom-content s-margin-half">
 
-                    <div class="row">
+            <div class="container">
 
-                        <div class="w-full rounded-lg bg-blue-light p-6 md:mx-6">
+                <div class="row">
 
-                            <div class="content font-light text-xl">
-                                <p>© Pipsqueak 2022. Images © PerBlue Entertainment & Disney. Mod Recommendations & Tier Ratings © Musketeer 2022</p>
-                            </div>
+                    <div class="w-full rounded-lg bg-blue-light p-6 md:mx-6">
 
+                        <div class="content font-light text-xl">
+                            <p>© Pipsqueak 2022. Images © PerBlue Entertainment & Disney. Mod Recommendations & Tier Ratings © Musketeer 2022</p>
                         </div>
 
                     </div>
 
                 </div>
 
-            </section>
-    
-        </main>
+            </div>
 
-    </div>
+        </section>
+
+    </main>
 
     <svg decoding="async" loading="lazy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
         <symbol id="tank" viewBox="0 0 512 512">
