@@ -49,20 +49,32 @@
 
             <div class="container">
 
-                <div class="row">
+                <div class="row justify-between gap-12">
 
                     <div class="w-full lg:w-3/5 md:px-6">
 
                         <h1>Recommended Mods Guide</h1>
-                        <p><small><em>Last Update 14th August '23 (Y30 / Level 385 / Patch S9)</em></small></p>
+                        <p><small><em>Last Update 13th September '23 (Emerald 0 / Level 390 / Patch S11)</em></small><br><small><em>Latest Tier Ratings displayed in <strong>Emerald Mode Only</strong> (for now)</em></small></p>
 
                         <div class="content mt-6">
                             <p>Welcome to the (un)official Disney Heroes Mod Guide!!</p>
                             <p>Created by Musketeer (/u/-Thinker-), designed & coded by Pipsqueak (/u/liltyker), we hope that this guide will serve you well when choosing mods for your heroes.</p>
-                            <p>Please take the mod setups in this guide as <em>ADVICE ONLY!</em> You might have different mods in mind that will work great in a specific scenario. This guide should be used as a fallback of options that will generally be the strongest in <em>most</em> situations.</p>
+                            <p>Please take the mod & subclass setups in this guide as <em>ADVICE ONLY!</em> You might have different mods in mind that will work great in a specific scenario. This guide should be used as a fallback of options that will generally be the strongest in <em>most</em> situations.</p>
                             <p>For updates, discussion & usage notes visit the Forum Thread - <a href="https://discourse.disneyheroesgame.com/t/recommended-mods-guide/1832072?u=pipsqueak" target="_blank" rel="noopener noreferrer">Recommended Mods Guide</a></p>
                         </div>
 
+                    </div>
+
+                    <div class="w-full lg:w-1/5 lg:text-right lg:pr-12">
+                        <div class="toggle-wrapper">
+                            <input id="emeralder" class="toggle-checkbox" type="checkbox" aria-label="Emerald Toggle">
+                            <div class="toggle-container">
+                                <div class="toggle-button">
+                                    <span>Mode: Yellow</span>
+                                    <span>Mode: Emerald</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -71,7 +83,7 @@
 
         </section>
 
-        <section class="heroes-grid s-margin-half">
+        <section class="heroes-grid s-margin-half z-0">
 
             <div class="container">
 
@@ -162,7 +174,7 @@
 
                 </div>
 
-                <div class="row s-padding-half">
+                <div class="row s-padding-half heroes-wrapper">
 
                     <div class="w-full heroes row">
 
@@ -186,7 +198,7 @@
                 
                                 <hr>
                 
-                                <div class="details capitalize row text-center">
+                                <div class="details capitalize row text-center bg-emerald">
                                     <div class="w-1/2 p-2 bg-red-team bg-blue-team bg-yellow-team"></div>
                                     <div class="w-1/2 p-2 row items-center justify-center"></div>
                                 </div>
@@ -225,7 +237,7 @@
                 <div class="row">
 
                     <div class="w-full p-6 md:mx-6 leading-tight font-light text-xl">
-                        <p><small>The pinning feature on this webapp uses localStorage to save a small cookie 🍪 on your device. This is so each time you load the webapp, your device remembers the heroes you've pinned. The cookie 🍪 isn't used for anything else, cannot be read by anyone else and your privacy is not at risk.</small></p>
+                        <p><small>The emerald & pinning features on this webapp use localStorage to save a small cookie 🍪 on your device. This is so each time you load the webapp, your device remembers the mode you're in, and the heroes you've pinned. The cookie 🍪 isn't used for anything else, cannot be read by anyone else and your privacy is not at risk.</small></p>
                     </div>
 
                     <div class="w-full rounded-lg bg-blue-light p-6 md:mx-6 mt-4">
@@ -272,6 +284,7 @@
     </svg>
 
     <script defer src="./js/scripts.js"></script>
+    <script defer data-name="BMC-Widget" data-cfasync="true" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="liltyker" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="15" data-y_margin="15"></script>
 
 </body>
 </html>
